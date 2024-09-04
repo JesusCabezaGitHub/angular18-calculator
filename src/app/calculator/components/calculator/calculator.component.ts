@@ -6,12 +6,10 @@ import { CalculatorButtonComponent } from "../calculator-button/calculator-butto
   standalone: true,
   imports: [CalculatorButtonComponent],
   templateUrl: './calculator.component.html',
-  styles: `
-    // .is-command {
-    //   @apply bg-indigo-700 bg-opacity-20
-    // }
-  `
+  styles: ``
 })
 export class CalculatorComponent {
-
+  handleClick(key: string) {
+    console.log({key})
+  }
 }
