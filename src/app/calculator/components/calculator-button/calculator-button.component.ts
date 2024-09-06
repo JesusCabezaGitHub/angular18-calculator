@@ -13,7 +13,7 @@ import { Component, ElementRef, HostBinding, input, output, signal, viewChild } 
   }
 })
 export class CalculatorButtonComponent {
-  public isCommand = input<boolean>(false)
+  public isCommand = input(false)
   public isEqual = input<boolean>(false)
   public onClick = output<string>()
 
