@@ -21,11 +21,6 @@ export class CalculatorButtonComponent {
 
   contentValue = viewChild<ElementRef<HTMLButtonElement>>('btnCalculator')
 
-  // @HostBinding('class.w-2/4') 
-  // public get isEqualStyle() {
-  //   return this.isEqual()
-  // }
-
   handleClick(){
     const contentValue = this.contentValue()?.nativeElement.innerText
     if(contentValue){
